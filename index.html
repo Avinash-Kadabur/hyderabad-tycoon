@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#bfe9f5" />
+    <meta name="description" content="Build your own Hyderabad: a cute city-building tycoon game." />
+    <title>Hyderabad Tycoon</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏙️</text></svg>"
+    />
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <div id="game"></div>
+
+    <header id="topbar">
+      <div class="pill">🏙️ Hyderabad</div>
+      <div class="right">
+        <div id="money" class="pill money">₹0</div>
+        <button id="sound" class="pill icon-button" type="button" aria-label="Turn sound off">🔊</button>
+      </div>
+    </header>
+
+    <div id="toast" role="status" aria-live="polite"></div>
+    <nav id="toolbar" aria-label="Build tools"></nav>
+
+    <div id="welcome" class="overlay">
+      <div class="card">
+        <div class="hello">🙏</div>
+        <h1>Namaste!</h1>
+        <p>Build your very own Hyderabad. Lay roads, then mark land for homes, shops and IT offices.</p>
+        <p class="hint">Drag to look around · pinch or scroll to zoom</p>
+        <p class="soon">✨ Buildings start growing in the next update!</p>
+        <button id="start" type="button">Let's build!</button>
+      </div>
+    </div>
+
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>
